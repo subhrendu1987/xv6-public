@@ -41,35 +41,5 @@ Copyright 2006-2018 Frans Kaashoek, Robert Morris, and Russ Cox.
 
 We don't process error reports (see note on top of this file).
 
-# ENVIRONMENT PREPARETION
- ## LINUX
- 1. `sudo apt-get install git wget qemu`
- 1. `git clone https://github.com/subhrendu1987/xv6-public/`
- 1. `sudo apt-get install gdb`
- 1. `cd xv6-public && make qemu`
- 1. `make qemu-gdb`
- 1. Open new terminal
- 1. `cd xv6-public && gdb ./kernel`
-
- ## MAC
- 1. We assume HomeBrew is already installed in the system.
- 1. `brew install git wget`
- 1. `git clone https://github.com/subhrendu1987/xv6-public/`
- 1. `brew install qemu`
- 1. `brew tap nativeos/i386-elf-toolchain`                             
- 1. `brew install i386-elf-binutils i386-elf-gcc`
- 1. `cd xv6-public && vi Makefile`
- 1. Search line number 32 or TOOLPREFIX = i386-jos-elf
- 1. Modify TOOLPREFIX = i386-jos-elf to TOOLPREFIX = i386-elf-
- 1. make qemu
- 1. cd ..
-
 # BUILDING AND RUNNING XV6
-
-To build xv6 on an x86 ELF machine (like Linux or FreeBSD), run
-"make". On non-x86 or non-ELF machines (like OS X, even on x86), you
-will need to install a cross-compiler gcc suite capable of producing
-x86 ELF binaries (see https://pdos.csail.mit.edu/6.828/).
-Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
-simulator and run "make qemu".
-
+ ## Find instructions in README.md
