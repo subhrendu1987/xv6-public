@@ -21,9 +21,14 @@ int main(int argc, char *argv[]) {
       exit();
     } else if (pid == 0) {
       // child
-      printf(1, "Child %d created\n",getpid());
-      for ( z = 0; z < 10000.0; z += 0.01 )
-         x =  x + 3.14 * 89.64;   // useless calculations to consume CPU time
+      printf(1, "Child (with pid=%d) created\n",getpid());
+      for ( z = 0; z < 100.0; z += 0.1 ){
+        x =  x + 3.14 * 89.64;   // useless calculations to consume CPU time
+        if((z== (int)z) && ((z%10) ==0)){
+          printf(1, "[pid=%d] %d \n",getpid(),z);
+        }
+      }
+        
       exit();
     }
   }
