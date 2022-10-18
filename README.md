@@ -1,7 +1,7 @@
 # ENVIRONMENT PREPARETION
  ## LINUX
  1. `sudo apt-get install git wget qemu aqemu`
- 2. `sudo apt-get install libc6-dev:i386`
+ 2. `sudo apt-get install libc6-dev:i386 gcc`
  3. `git clone https://github.com/subhrendu1987/xv6-public/`
  4. `sudo apt-get install gdb`
  5. `cd xv6-public && make qemu`
