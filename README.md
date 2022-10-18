@@ -1,10 +1,11 @@
 # ENVIRONMENT PREPARETION
  ## LINUX
  1. `sudo apt-get install git wget qemu aqemu`
- 1. `git clone https://github.com/subhrendu1987/xv6-public/`
- 1. `sudo apt-get install gdb`
- 1. `cd xv6-public && make qemu`
- 1. If you have 64 bit OS there is a chance Makefile will not be able to find qemu.
+ 2. `sudo apt-get install libc6-dev:i386`
+ 3. `git clone https://github.com/subhrendu1987/xv6-public/`
+ 4. `sudo apt-get install gdb`
+ 5. `cd xv6-public && make qemu`
+ 6. If you have 64 bit OS there is a chance Makefile will not be able to find qemu.
  	Check using the command `make qemu-nox` and see the output.
   In that case you should edit the Makefile at line 54 and add the following code:
      `QEMU = qemu-system-x86_64`
