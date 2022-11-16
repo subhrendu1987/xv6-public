@@ -1,8 +1,9 @@
 ## Bash shell commands
 * `$nm kernel| grep _start`[^1]
 * `$make-nox-gdb`[^2]
-* `$gdb`
+* `$gdb`[^0]
 
+[^0]: (Cheatsheet) [https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf]
 [^1]: Get `ADDRESS` (e.g. 0x0010000c)
 [^2]: Get `TCP_PORT` (e.g. :26000)
 ## GDB shell commands
