@@ -1,7 +1,10 @@
 ## Bash shell commands
-`$nm kernel| grep _start`	--> Get `ADDRESS` (e.g. 0x0010000c)
-`$make-nox-gdb`				--> Get `TCP_PORT` (e.g. :26000)
-`$gdb`
+* `$nm kernel| grep _start`[^1]
+* `$make-nox-gdb`[^2]
+* `$gdb`
+
+[^1]: Get `ADDRESS` (e.g. 0x0010000c)
+[^2]: Get `TCP_PORT` (e.g. :26000)
 ## GDB shell commands
 ### Entry address breakpoint
 * `(gdb)set architecture i386:x86-64`
